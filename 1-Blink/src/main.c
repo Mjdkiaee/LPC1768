@@ -15,14 +15,14 @@ int main()
 	// test p1.22 on camera Header (header number:19)
 	// and tested with port1 header (header number:36) 
 	
-	GPIO_SetDir(1,(1<<22),1);  // 23 for p1.23 works and led is blinking , 21 for p1.21 works and led is blinking ,BUT for 22 led is just on and ISNOT blinking
+	GPIO_SetDir(1,(1<<22),1);  
   
 
 while(1)
 {	
-	GPIO_SetValue(1,(1<<22));  // 23 for p1.23 works and led is blinking , 21 for p1.21 works and led is blinking ,BUT for 22 led is just on and ISNOT blinking
+	GPIO_SetValue(1,(1<<22));  //p1.22 led is  blinking
 	Delay();
-	GPIO_ClearValue(1,(1<<22));	  // 23 for p1.23 works and led is blinking , 21 for p1.21 works and led is blinking ,BUT for 22 led is just on and ISNOT blinking
+	GPIO_ClearValue(1,(1<<22));  
 	Delay();
 }
 	
